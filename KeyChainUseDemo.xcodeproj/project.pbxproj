@@ -15,6 +15,7 @@
 		08F2AFCB1C51FD8800B3C477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F2AFC91C51FD8800B3C477 /* LaunchScreen.storyboard */; };
 		08F2AFD61C51FD8800B3C477 /* KeyChainUseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2AFD51C51FD8800B3C477 /* KeyChainUseDemoTests.m */; };
 		08F2AFE11C51FD8900B3C477 /* KeyChainUseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2AFE01C51FD8900B3C477 /* KeyChainUseDemoUITests.m */; };
+		08F2AFF51C5219E900B3C477 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F2AFF41C5219E900B3C477 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		08F2AFDC1C51FD8900B3C477 /* KeyChainUseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChainUseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F2AFE01C51FD8900B3C477 /* KeyChainUseDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChainUseDemoUITests.m; sourceTree = "<group>"; };
 		08F2AFE21C51FD8900B3C477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F2AFF41C5219E900B3C477 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F2AFF51C5219E900B3C477 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		08F2AFAF1C51FD8800B3C477 = {
 			isa = PBXGroup;
 			children = (
+				08F2AFF41C5219E900B3C477 /* Security.framework */,
 				08F2AFBA1C51FD8800B3C477 /* KeyChainUseDemo */,
 				08F2AFD41C51FD8800B3C477 /* KeyChainUseDemoTests */,
 				08F2AFDF1C51FD8900B3C477 /* KeyChainUseDemoUITests */,
@@ -207,6 +211,7 @@
 				TargetAttributes = {
 					08F2AFB71C51FD8800B3C477 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 6ZFZ89UGAB;
 					};
 					08F2AFD01C51FD8800B3C477 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -411,10 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Xuan (46692UEGZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Xuan (46692UEGZB)";
 				INFOPLIST_FILE = KeyChainUseDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = j.t.d.KeyChainUseDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtd.KeyChainUsePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5bf98dfe-2b0c-4c71-80ca-7fe493362eec";
 			};
 			name = Debug;
 		};
@@ -422,10 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Xuan (46692UEGZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Xuan (46692UEGZB)";
 				INFOPLIST_FILE = KeyChainUseDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = j.t.d.KeyChainUseDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtd.KeyChainUsePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5bf98dfe-2b0c-4c71-80ca-7fe493362eec";
 			};
 			name = Release;
 		};
@@ -496,6 +509,7 @@
 				08F2AFE71C51FD8900B3C477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08F2AFE81C51FD8900B3C477 /* Build configuration list for PBXNativeTarget "KeyChainUseDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				08F2AFEA1C51FD8900B3C477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08F2AFEB1C51FD8900B3C477 /* Build configuration list for PBXNativeTarget "KeyChainUseDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +527,7 @@
 				08F2AFED1C51FD8900B3C477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
